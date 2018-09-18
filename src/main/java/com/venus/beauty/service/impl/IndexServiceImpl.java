@@ -18,7 +18,7 @@ public class IndexServiceImpl implements IndexService {
     private UserMapper mapper;
     @Override
     public String login(String username, String password) {
-        User user = mapper.findByName(username);
+        User user = mapper.selectById(username);
         if (user != null){
             if (user.getPassword().equals(password)){
                 return "login";
@@ -29,6 +29,6 @@ public class IndexServiceImpl implements IndexService {
 
     @Override
     public List<User> queryAllUser() {
-      return  mapper.queryAllUser();
+      return  mapper.selectList(null);
     }
 }

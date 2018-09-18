@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.*;
@@ -15,10 +16,12 @@ public class UserMapperTest {
     @Autowired
     private UserMapper userMapper;
 
+    @Autowired
+    private StringRedisTemplate redisTemplate;
+
     @Test
     public void method(){
-        User user = userMapper.findByName("thjzynj");
-        System.out.println(user.getUserid());
+        redisTemplate.opsForValue().set("lx","firstRedis");
     }
 
 }
