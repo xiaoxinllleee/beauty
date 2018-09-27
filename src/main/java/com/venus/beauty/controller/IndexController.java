@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -40,5 +41,13 @@ public class IndexController {
         List<User> list = service.queryAllUser();
         model.addAttribute("users",list);
         return "user";
+    }
+
+    @RequestMapping(value = "/wx",method = RequestMethod.GET)
+    @ResponseBody
+    public Map<String,Object> listUser(){
+        Map<String,Object> result = new HashMap<>();
+        result.put("areaList",service.queryAllUser());
+        return result;
     }
 }
