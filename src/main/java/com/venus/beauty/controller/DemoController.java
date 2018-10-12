@@ -32,4 +32,10 @@ public class DemoController {
         result.put("admin",request.getSession().getAttribute("admin"));
         return result;
     }
+
+    @RequestMapping("/hello")
+    public String hello() throws Exception {
+        System.out.println(1/0);
+        return "";
+    }
 }
