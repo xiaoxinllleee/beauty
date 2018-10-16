@@ -19,7 +19,7 @@ public class GlobalExceptionHandler {
     Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
     @ExceptionHandler(value = Exception.class)
-    public ModelAndView defaultEooroHandler(HttpServletRequest request,Exception e) throws  Exception{
+    public ModelAndView defaultEooroHandler(HttpServletRequest request,Exception e){
         ModelAndView mv = new ModelAndView();
         mv.addObject("exception",e);
         mv.addObject("url",request.getRequestURL());

@@ -1,5 +1,6 @@
 package com.venus.beauty.utils;
 
+import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
 import com.baomidou.mybatisplus.generator.config.GlobalConfig;
@@ -7,7 +8,6 @@ import com.baomidou.mybatisplus.generator.config.PackageConfig;
 import com.baomidou.mybatisplus.generator.config.StrategyConfig;
 import com.baomidou.mybatisplus.generator.config.converts.MySqlTypeConvert;
 import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
-import com.baomidou.mybatisplus.generator.config.rules.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 
@@ -16,7 +16,7 @@ import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
  * @time 2018/9/18
  */
 public class MpGenerator {
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
 //        assert (false) : "代码生成属于危险操作，请确定配置后取消断言执行代码生成！";
         AutoGenerator mpg = new AutoGenerator();
         // 选择 freemarker 引擎，默认 Velocity
@@ -31,7 +31,7 @@ public class MpGenerator {
         gc.setEnableCache(false);// XML 二级缓存
         gc.setBaseResultMap(true);// XML ResultMap
         gc.setBaseColumnList(false);// XML columList
-        /* 自定义文件命名，注意 %s 会自动填充表实体属性！ */
+        *//* 自定义文件命名，注意 %s 会自动填充表实体属性！ *//*
         // gc.setMapperName("%sDao");
         // gc.setXmlName("%sDao");
         // gc.setServiceName("MP%sService");
@@ -145,6 +145,6 @@ public class MpGenerator {
 
         // 打印注入设置【可无】
         // System.err.println(mpg.getCfg().getMap().get("abc"));
-    }
+    }*/
 
 }

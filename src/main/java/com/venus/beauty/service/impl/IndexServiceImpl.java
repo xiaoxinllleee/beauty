@@ -3,7 +3,7 @@ package com.venus.beauty.service.impl;
 import com.venus.beauty.entity.BaseData;
 import com.venus.beauty.entity.TbVisit;
 import com.venus.beauty.entity.User;
-import com.venus.beauty.entity.UserMapper;
+import com.venus.beauty.mapper.UserMapper;
 import com.venus.beauty.service.IndexService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,9 +13,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
 @Service

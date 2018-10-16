@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@MapperScan("com.venus.beauty.entity")
+@MapperScan("com.venus.beauty.mapper")
 @EnableScheduling
 public class BeautyApplication {
 
