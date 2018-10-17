@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.venus.beauty.mapper.ScheduledMapper">
+
+    <select id="getAllSche" resultType="com.venus.beauty.entity.Scheduled">
+        select  * from SCHEDULED
+    </select>
+
+</mapper>
