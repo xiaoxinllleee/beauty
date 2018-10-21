@@ -1,8 +1,7 @@
 package com.venus.beauty.entity;
 
+
 import lombok.Data;
-
-
 
 @Data
 public class User {

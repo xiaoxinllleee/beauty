@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServletRequest;
  * @author lx
  * @time 2018/10/12
  */
-@ControllerAdvice
+//@ControllerAdvice
 public class GlobalExceptionHandler {
-    public static final String VENUS_ERROR = "error";
+    /*public static final String VENUS_ERROR = "error";
 
     Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
@@ -28,5 +28,5 @@ public class GlobalExceptionHandler {
         logger.error("error ===" + request.getRequestURL());
         logger.debug("debug ==== debug" );
         return mv;
-    }
+    }*/
 }

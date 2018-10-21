@@ -53,4 +53,10 @@ public class IndexController {
         result.put("areaList",service.queryAllUser());
         return result;
     }
+
+    @RequestMapping("/s")
+    public String security(){return "security";}
+
+    @RequestMapping("/hello")
+    public String getHelllo(){return "hello";}
 }

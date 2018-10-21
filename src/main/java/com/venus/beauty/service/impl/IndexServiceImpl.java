@@ -29,7 +29,9 @@ public class IndexServiceImpl implements IndexService {
 
     @Override
     public String login(String username, String password) {
+        logger.info(username+"  "+password);
         List<User> list = jdbcTemplate.query("select * from user where username = ?",new Object[]{username},new BeanPropertyRowMapper<>(User.class));
+        logger.info(" "+list.size());
         if (list != null && list.size() > 0){
             User user  = list.get(0);
             if (user.getPassword().equals(password))
