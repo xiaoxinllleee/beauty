@@ -43,4 +43,7 @@ public class DemoController {
         System.out.println(1/0);
         return "";
     }
+
+    @RequestMapping("/jenkins")
+    public String jenkins(){return "jenkins";}
 }
